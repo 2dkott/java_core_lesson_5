@@ -14,7 +14,7 @@ public class Tree {
      * @param indent
      * @param isLast
      */
-    public static void print(File sourceFile, String indent, boolean isLast){
+    public static void print(File sourceFile, String indent, boolean isLast) {
 
 
         boolean isFile = sourceFile.isFile();

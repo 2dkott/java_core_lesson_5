@@ -1,11 +1,7 @@
 package services;
 
-import domain.Tree;
-
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
@@ -30,7 +26,7 @@ public class BackUpHandler {
 
     }
 
-    private void copyFiles(Path sourcePath, Path targetPath){
+    private void copyFiles(Path sourcePath, Path targetPath) {
         List<File> fileList = Arrays.asList(Objects.requireNonNull(sourcePath.toFile().listFiles()));
         fileList.forEach(file -> {
             if(file.isFile()){

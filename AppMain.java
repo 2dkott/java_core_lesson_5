@@ -6,8 +6,7 @@ import java.nio.file.Path;
 
 public class AppMain {
 
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try{
             Path sourcePath = Path.of("d:", "test");
             Path bachUpPath = Path.of("d:", "backup");
@@ -20,7 +19,7 @@ public class AppMain {
 
             System.out.println("\nДиректория бэкапа:");
             Tree.print(new File(bachUpPath.toUri()), " ", true);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
